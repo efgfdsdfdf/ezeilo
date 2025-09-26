@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timetable - Student Companion</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#343a40">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="index.html">Team Black</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="gpa.html">GPA Calculator</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="notes.html">Notes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="timetable.html">Timetable</a>
+      </li>
+      <!-- ✅ Only ONE login/logout button -->
+      <li class="nav-item">
+        <a class="nav-link" href="login.html" id="logoutBtn">Logout</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+  <!-- Timetable Section -->
+  <form id="timetableForm" class="mb-3">
+  <input type="text" id="subject" class="form-control mb-2" placeholder="Enter Subject" required>
+  <input type="text" id="day" class="form-control mb-2" placeholder="Enter Day" required>
+  <input type="time" id="time" class="form-control mb-2" required>
+  <button type="submit" class="btn btn-dark">Add</button>
+</form>
+
+<ul id="timetableList" class="list-group"></ul>
+
+
+  <!-- Footer -->
+  <footer class="text-center py-3 text-white bg-dark mt-5">
+    <p class="mb-0">© 2025 Student Companion | Built by Team Black 🖤</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

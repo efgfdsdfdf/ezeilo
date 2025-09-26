@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Student Companion</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #000502, #9c24dd);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+
+    .login-container {
+      background: rgba(0,0,0,0.6);
+      padding: 40px;
+      border-radius: 15px;
+      text-align: center;
+      width: 300px;
+      box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
+    }
+
+    .login-container h2 {
+      margin-bottom: 20px;
+      color: #ffcc00;
+    }
+
+    .login-container input {
+      width: 90%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      margin-bottom: 15px;
+      font-size: 1rem;
+    }
+
+    .login-container button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background: #00c851;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .login-container button:hover {
+      background: #009432;
+    }
+
+    #error {
+      margin-top: 10px;
+      color: #ff4444;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 15px;
+      text-align: center;
+      width: 100%;
+      color: white;
+      font-size: 0.9rem;
+    }
+  </style>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#343a40">
+
+</head>
+<body>
+  <div class="login-container">
+    <h2>Team Black 🖤 Login</h2>
+    <input type="text" id="username" placeholder="Enter your username">
+    <button id="loginBtn">Login</button>
+    <p id="error"></p>
+  </div>
+
+  <footer>
+    <p>© 2025 Student Companion | Built by Team Black 🖤</p>
+    <p> Powerded by EZEILO</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - Student Companion</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="login-page">
+
+  <div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="card p-4 shadow-lg">
+      <h2 class="text-center mb-3">Login</h2>
+      <form id="loginForm">
+        <div class="mb-3">
+          <label for="username" class="form-label">Enter Username</label>
+          <input type="text" id="username" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-dark w-100">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
